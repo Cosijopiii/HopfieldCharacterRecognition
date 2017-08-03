@@ -63,7 +63,6 @@ public class Controller {
 
         System.out.println(m.getColumnDimension()+" "+m.getRowDimension());
         m.print(2,0);
-        Matrix tl=m.getMatrix(0,0,0,m.getColumnDimension()-1).transpose();
 
         Matrix wi;
         for (int i = 0; i < m.getRowDimension(); i++) {
@@ -147,7 +146,6 @@ public class Controller {
 
         }
         Matrix e=new Matrix(t,324);
-        System.out.println(e.getColumnDimension()+" "+e.getRowDimension());
         Matrix S=e.transpose().times(w);
         S=hard(S);
         S.print(2,0);
@@ -238,12 +236,12 @@ public class Controller {
                 });
 
                 gridPane.add(p,j,i);
-                System.out.println(j+" "+i);
+               // System.out.println(j+" "+i);
             }
         }
         gridPane.setGridLinesVisible(true);
-        gridPane.getChildren().forEach(e-> System.out.println(e.getClass()));
-        System.out.println(gridPane.getChildren().size());
+        //gridPane.getChildren().forEach(e-> System.out.println(e.getClass()));
+        //System.out.println(gridPane.getChildren().size());
 
     }
 

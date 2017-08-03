@@ -37,7 +37,7 @@
          <Font name="Helvetica Neue Light" size="24.0" />
       </font>
    </Label>
-   <Label layoutX="97.0" layoutY="74.0" text="Introdusca Patrón">
+   <Label layoutX="97.0" layoutY="74.0" text="Introduzca Patrón">
       <font>
          <Font name="Helvetica Neue Light" size="24.0" />
       </font>
