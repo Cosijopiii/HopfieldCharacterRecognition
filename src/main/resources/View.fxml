@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -11,11 +11,13 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="flowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="689.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopfiel.Controller">
+<AnchorPane fx:id="flowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="689.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopfiel.Controller">
    <AnchorPane layoutX="419.0" layoutY="117.0" prefHeight="198.0" prefWidth="199.0">
       <children>
-         <AnchorPane layoutX="5.0" layoutY="-5.0" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #000;">
-            <Canvas fx:id="canvas" height="200.0" layoutX="2.0" layoutY="-4.0" width="200.0" />
+         <AnchorPane layoutX="5.0" layoutY="-5.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000;">
+            <children>
+               <ImageView fx:id="imgResult" fitHeight="200.0" fitWidth="200.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
          </AnchorPane>
       </children>
    </AnchorPane>
@@ -110,4 +112,9 @@
          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
    </GridPane>
+   <JFXButton fx:id="btnclear" buttonType="RAISED" layoutX="310.0" layoutY="276.0" prefHeight="35.0" prefWidth="85.0" ripplerFill="#0ad72f" style="-fx-background-color: #FF5722;" text="limpiar" textFill="WHITE">
+      <font>
+         <Font name="Helvetica Neue Light" size="18.0" />
+      </font>
+   </JFXButton>
 </AnchorPane>
